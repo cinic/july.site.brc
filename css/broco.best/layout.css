@@ -284,7 +284,7 @@ body {
 			-moz-border-radius:10px;
 			-webkit-border-radius:10px;
 			z-index:2;
-		}	
+		}
 			.nearest-branch div li {
 				display:inline;
 				list-style-image:none;
@@ -292,6 +292,9 @@ body {
 			.nearest-branch div h3 {
 				margin:8px 0 4px;
 			}
+		.nearest-branch-active div {
+			display:block;
+		}
 		
 	.nav {
 
