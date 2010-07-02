@@ -254,6 +254,7 @@ body {
 			cursor:pointer;
 		}
 		.nearest-branch {
+			position:relative;
 			float:left;
 			margin:-3px 0 0;
 			padding:3px 6px;
