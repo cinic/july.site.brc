@@ -212,7 +212,7 @@ body {
 			left:0;
 			top:-8px;
 			display:none;
-			padding:35px 10px 0;
+			padding:35px 10px 10px;
 			background:#FFF;
 		}
 		li.cabinet-form-active {
@@ -260,16 +260,38 @@ body {
 			padding:3px 6px;
 		}
 			.nearest-branch a {
-				position:relative;
 				width:16px;
 				height:11px;
 			}
 		.nearest-branch-title {
+			position:relative;
 			margin:0 0 0 16px;
 			cursor:pointer;
 			color:#F00;
 			font-style:oblique;
+			z-index:5;
 		}
+		.nearest-branch div {
+			position:absolute;
+			top:-8px;
+			left:0;
+			padding:30px 10px 10px;
+			display:none;
+			width:200px;
+			background:#FFF;
+			border:1px solid #CBCBCB;
+			border-radius:10px;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			z-index:2;
+		}	
+			.nearest-branch div li {
+				display:inline;
+				list-style-image:none;
+			}
+			.nearest-branch div h3 {
+				margin:8px 0 4px;
+			}
 		
 	.nav {
 
