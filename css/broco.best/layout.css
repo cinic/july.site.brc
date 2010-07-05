@@ -773,6 +773,20 @@ body {
 		list-style-image:none;
 		font-size:11px;
 	}
+	
+	#footer .nav .communities {
+		padding:0 20px;
+		border:1px solid #B6B6B6;
+		border-top:0;
+		border-bottom:0;
+	}
+		#footer .nav .communities a {
+			border:0;
+			padding:4px 2px 0;
+			display:inline;
+			line-height:18px;
+			vertical-align:middle;
+		}
 	#footer hr {
 		display:block;
 		margin:20px 0 10px;
