@@ -571,6 +571,24 @@ body {
 			font-size:16px;
 			text-transform:uppercase;
 		}
+		.events-title-icon {
+			position:absolute;
+			margin:0 0 0 -22px;
+			width:16px;
+			height:17px;
+			background:url(sprite.png) no-repeat -17px -451px;
+		}
+		.company-news .events-title-icon {
+			background-position: -17px -451px;
+		}
+		.elearning .events-title-icon {
+			background-position: -17px -526px;
+		}
+		.special-offers .events-title-icon {
+			background-position: -17px -469px;
+		}
+		
+		
 		.events-list li {
 			margin:0 0 18px;
 			list-style-image:none;
