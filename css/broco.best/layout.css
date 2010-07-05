@@ -467,7 +467,7 @@ body {
 		#js .ways > :first-child {
 			margin-left:0;
 		}
-		.ways dt.selected,
+		#js .ways dt.selected,
 		#nojs .ways dt {
 			color:#F00;
 			background:#FFF;
