@@ -523,7 +523,7 @@ body {
 		margin:0 0 8px;
 		width:709px;
 		height:73px;
-		background:#FFF;
+		background:#FFF url(award.png) no-repeat 10px 0;
 	}
 	
 		.awards h2 {
