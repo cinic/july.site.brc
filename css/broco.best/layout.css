@@ -14,16 +14,21 @@ a {
 	float:right;
 }
 .banner-240 {
+	float:right;
 	margin:0 0 8px;
 	width:240px;
 	height:400px;
 	background:#737373;
 }
 .banner-714 {
+	float:right;
 	margin:0 0 8px;
 	width:714px;
 	height:80px;
 	background:#737373;
+}
+#nojs .banner-714 {
+	float:left;
 }
 
 .button {
@@ -59,25 +64,25 @@ ul li {
 .tabs {
 	
 }
-	.tabs dt {
+	#js .tabs dt {
 		float:left;
 		position:relative;
 		background:url(sprite.png) repeat-x 0 -43px;
 		border-bottom:none;
 		cursor:pointer;
 	}
-	.tabs dt.selected {
+	#js .tabs dt.selected {
 		border-bottom-color:#FFF;
 		z-index:10;
 	}
-	.tabs dd {
+	#js .tabs dd {
 		position:relative;
 		float:right;
 		display:none;
 		width:100%;
 		margin:0 0 0 -100%;
 	}
-	.tabs dd.selected {
+	#js .tabs dd.selected {
 		display:block;
 	}
 /*Page layout
@@ -244,31 +249,41 @@ body {
 			margin:0 0 6px;
 		}
 		/*end*/
-		.active-language {
-			margin:3px 4px 0 -16px;
-			display:inline-block;
+		.language {
+			position:relative;
+			margin:3px 0;
+			float:left;
 			width:16px;
 			height:11px;
 			background:url(flags.png) no-repeat 0 0;
-			vertical-align:top;
 			cursor:pointer;
+			z-index:5;
 		}
 			.flag-ru {
 				background-position:0 -11px;
 			}
+		#lang-select {
+			float:left;
+		}
+		#js #lang-select {
+			display:none;
+		}
 		.nearest-branch {
 			position:relative;
 			float:left;
 			margin:-3px 0 0;
-			padding:3px 6px;
+			padding:3px 0;
 		}
+			.nearest-branch li {
+				float:left;
+				list-style-image:none;
+			}
 			.nearest-branch a {
 				width:16px;
 				height:11px;
 			}
 		.nearest-branch-title {
 			position:relative;
-			margin:0 0 0 16px;
 			cursor:pointer;
 			color:#F00;
 			font-style:oblique;
@@ -276,8 +291,8 @@ body {
 		}
 		.nearest-branch div {
 			position:absolute;
-			top:-8px;
-			left:0;
+			top:-6px;
+			left:-4px;
 			padding:30px 10px 10px;
 			display:none;
 			width:200px;
@@ -340,6 +355,7 @@ body {
 }
 	/*Begin carousel on the main page*/
 	.slides {
+		float:right;
 		margin:0 0 8px;
 		position:relative;
 		width:800px;
@@ -386,6 +402,7 @@ body {
 	/*End carousel*/
 	
 	.deposit-withdraw {
+		float:left;
 		margin:0 0 8px;
 		position:relative;
 		width:164px;
@@ -417,14 +434,20 @@ body {
 	
 	/*Ways - newbee, professional, investor*/
 	.ways {
+		float:left;
 		margin:11px 0 8px;
-		position:relative;
 		width:712px;
+	}
+	#js .ways {
+		position:relative;
 		height:308px;
 		overflow:hidden;
 	}
-		.ways dt {
+		#js .ways dt {
 			margin:1px 0 0 5px;
+		}
+		.ways dt {
+			margin:10px 0 0;
 			width:172px;
 			height:34px;
 			line-height:35px;
@@ -441,10 +464,11 @@ body {
 			text-align:center;
 			text-transform:uppercase;
 		}
-		.ways > :first-child {
+		#js .ways > :first-child {
 			margin-left:0;
 		}
-		.ways dt.selected {
+		.ways dt.selected,
+		#nojs .ways dt {
 			color:#F00;
 			background:#FFF;
 			border-bottom:none;
@@ -452,8 +476,7 @@ body {
 		} 
 		
 		.ways dd {
-			margin:35px 1px 0 -714px;
-			width:709px;
+			position:relative;
 			height:272px;
 			background:#FFF;
 			border:1px solid #CBCBCB;
@@ -463,6 +486,11 @@ body {
 			-moz-border-radius-bottomright:30px;
 			-webkit-border-bottom-left-radius:30px;
 			-webkit-border-bottom-right-radius:30px;
+		}
+		#js .ways dd {
+			margin:35px 1px 0 -714px;
+			width:709px;
+			height:272px;
 		}
 		.ways-wrapper {
 			margin:34px 0 0 236px;
@@ -491,6 +519,7 @@ body {
 	/*End ways*/
 
 	.awards {
+		float:left;
 		margin:0 0 8px;
 		width:709px;
 		height:73px;
@@ -528,9 +557,13 @@ body {
 
 
 	.events {
+		float:left;
 		padding:0 10px 20px;
 		width:220px;
 		background:#FBFBFB;
+	}
+	#nojs .events {
+		float:right;
 	}
 		.events-title {
 			margin:22px 0 6px 22px;
@@ -570,6 +603,7 @@ body {
 		
 	.about-company,
 	.analytics {
+		float:right;
 		margin:0 0 8px;
 		padding:20px;
 		width:674px;
@@ -577,6 +611,10 @@ body {
 		border-radius:30px;
 		-moz-border-radius:30px;
 		-webkit-border-radius:30px;
+	}
+	#nojs .about-company,
+	#nojs .analytics {
+		float:left;
 	}
 		.analytics-title {
 			font-size:14px;
@@ -638,14 +676,18 @@ body {
 			background:url(sprite.png) repeat-x 0 -181px;
 			border:1px solid #D0D0D0;
 		}
-		.trading-central-list dt.selected {
+		.trading-central-list dt.selected,
+		#nojs .trading-central-list dt {
 			color:#000;
 			background:none;
 			font-weight:bold;
 		}
-		.trading-central-list dd {
+		#js .trading-central-list dd {
 			margin-top:27px;
 			border:1px solid #D0D0D0;
+		}
+		#nojs .trading-central-list dd {
+			margin-bottom:20px;
 		}
 		.trading-central-list th,
 		.trading-central-list td {
@@ -653,11 +695,15 @@ body {
 			border-bottom:1px solid #D0D0D0;
 		}
 		
+	.economic-calendar-wrapper {
+		float:left;
+	}
 	.economic-calendar-list	{
 		margin:4px 0 0;
 	}
 		
 	.calculator {
+		float:right;
 		width:91px;	
 		background:url(ct.png) no-repeat 0 0;
 	}
@@ -708,4 +754,16 @@ body {
 	.directory-list > li li {
 		list-style-image:none;
 		font-size:11px;
+	}
+	#footer hr {
+		display:block;
+		margin:20px 0 10px;
+		border:1px solid #BBB;
+		border-bottom-color:#E3E3E3;
+		border-right:0;
+		border-left:0;
+	}
+	#footer .copy {
+		color:#F9F9F9;
+		text-align:center;
 	}

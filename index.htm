@@ -22,8 +22,20 @@
 			</h1>
 			<p class="hot-line float-right" title="Звонок бесплатный"><span class="hot-line-q">{</span>Горячая линия: <span class="hot-line-number">8 800 3333 88 3</span><span class="hot-line-q">}</span></p>
 			<div class="top-nav">
-				<div class="nearest-branch">
-					<span class="nearest-branch-title"><span class="active-language flag-ru" title="Русский"></span> <a href="#">Филиалы &darr;</a></span>
+				<ul class="nearest-branch">
+					<li><span class="language flag-ru" title="Русский"></span>
+						<form id="lang-select" action="#">
+							<select id="form-lang-select">
+								<option>RU</option>
+								<option>EN</option>
+								<option>ES</option>
+								<option>CN</option>
+								<option>DE</option>
+								<option>AR</option>
+							</select>
+						</form>
+					</li>
+					<li><span class="nearest-branch-title"> <a href="#">Филиалы &darr;</a></span>
 					<!--ul class="top-nav-language-list">
 			        	<li><a href="http://ar.brocompany.com/"><span class="info-language flag-sa" title="عربي"></span>Ar</a></li>
 			        	<li><a href="http://www.brocompany.com"><span class="info-language flag-us" title="English"></span>En</a></li>
@@ -31,7 +43,8 @@
 			        	<li><a href="http://ua.brocompany.com/"><span class="info-language flag-ua" title="Українська"></span>Ua</a></li>
 			        	<li><a href="http://cn.brocompany.com/"><span class="info-language flag-cn" title="中文"></span>Cn</a></li>
 			        </ul-->
-				</div>
+					</li>
+				</ul>
 				<ul class="top-nav-list">
 					<li><a class="chat" href="http://webim.brocompany.com/webim-1/client.php?level=ajaxed&amp;lang=ru" title="Online консультация" rel="external"><i></i>Online консультация</a></li>
 			    	<li><a class="forum" href="http://procapital.ru/" rel="external" title="Форум"><i></i>Форум</a></li>
@@ -48,20 +61,20 @@
 			</ul>
 		</div>
 		<div id="content">
-			<div id="slides" class="slides float-right">
+			<div id="slides" class="slides">
 				<div id="sections">
 					<a href="/interbank-market/?slides"><img src="http://files.brocompany.com/images/slides.index/slide.forex.01.ru.jpg" alt="Работайте на валютном рынке Forex 24 часа в сутки!" width="800" height="280" /></a>
 				</div>
 			</div>
-			<div class="deposit-withdraw float-left">
+			<div class="deposit-withdraw">
 				<h2 class="deposit-withdraw-title"><span>Ввод&#8211;вывод</span> средств</h2>
 				<a href="#"><img src="css/broco.best/deposit.withdraw.png" alt="visa, mastercard, webmoney, яндекс.деньги" width="130" height="138" /> Подробнее >></a>
 			</div>
 			<hr />
-			<div class="banner-240 float-right">
+			<div class="banner-240">
 				
 			</div>
-			<dl class="ways tabs float-left">
+			<dl class="ways tabs">
 				<dt class="selected">Начинающему</dt>
 				<dd class="selected">
 					<div class="ways-wrapper">
@@ -119,7 +132,7 @@
 					<a class="button float-right" href="/brokerage-services/open-demo-account/broco-trader/?faces=newb">Открыть демо счёт!</a>
 				</dd>
 			</dl>
-			<div class="awards float-left">
+			<div class="awards">
 				<h2><span>Наши</span> достижения</h2>
 				<ul class="awards-list">
 					<li><a href="/about-us/news/803.htm" title="Broco признана Компанией года России!"><img width="42" height="46" src="http://files.brocompany.com/css/broco.10/img.company.02.png" alt="Broco признана Компанией года России!">Компания года 2009</a></li>
@@ -129,7 +142,7 @@
 				</ul>
 			</div>
 			<hr />
-			<div class="events float-left">
+			<div class="events">
 				<h3 class="company-news events-title"><span class="events-title-icon"></span>Новости Broco</h3>
 				<ul class="events-list">
 					<li><a href="#"><span class="events-list-date">14.06.2010</span> Торговля фьючерсами в рамках конкурса «Новая Русская рулетка»</a></li>
@@ -162,10 +175,10 @@
 					<li>blablablabla</li>
 				</ul>
 			</div>
-			<div class="banner-714 float-right">
+			<div class="banner-714">
 				
 			</div>
-			<div class="analytics float-right">
+			<div class="analytics">
 				<h2 class="analytics-title dow-jones"><span>Аналитика от</span> DowJones</h2>
 				<ul class="dowjones-list">
 					<li><span class="dowjones-date">14.06.2010</span> (UTC) ТЕХАНАЛИЗ ЕВРОПЕЙСКИХ ВАЛЮТНЫХ РЫНКОВ: Доллар продолжит расти</li>
@@ -519,10 +532,10 @@
 						</table>
 					</dd>
 				</dl>
-				<h3 class="calculator float-right">
+				<h3 class="calculator">
 					<a href="#"><span>Калькулятор трейдера</span></a>
 				</h3>
-				<div class="economic-calendar-wrapper float-left">
+				<div class="economic-calendar-wrapper">
 					<h2 class="analytics-title economic-calendar"><span>Экономический</span> календарь</h2>
 					<ul class="economic-calendar-list">
 						<li><span class="economic-calendar-date">14.09.2009</span> Многообразие возможностей доступа на финансовые  рынки возможностей доступа</li>
@@ -582,14 +595,26 @@
 			</ul>
 
 			<ul class="nav">
-				<li>blabla</li>
-				<li>blabla</li>
-				<li>blabla</li>
-				<li>blabla</li>
-				<li>blabla</li>
-				<li>balbla</li>
-				<li>balbla</li>
+				<li><a href="#">Адреса и телефоны</a></li>
+				<li><a href="#">О рисках</a></li>
+				<li><a href="#">Карта сайта</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">blabla</a></li>
+				<li>
+					<form action="/search/" id="cse-search-box">
+					<div class="">
+					<input type="hidden" name="cx" value="009277402390503873381:ovcxyplrhxm">
+					<input type="hidden" name="cof" value="FORID:11">
+					<input type="hidden" name="ie" value="UTF-8">
+					<input type="text" id="q-text" name="q" size="30">
+					<input type="submit" name="sa" value="Поиск">
+					</div>
+					</form>
+				</li>
 			</ul>
+			<hr/>
+			<p class="copy">&copy; 2010 Broco Inc. Все права защищены. Регулируется <a title="Main Page FSC" href="http://www.gov.mu/portal/sites/ncb/fsc/index.html">FSC</a> <!--и <a href="http://www.fcsm.ru/" title="ссылка на главную страницу Федеральной службы по финансовым рынкам">ФСФР</a-->. <a rel="external" href="http://top100.rambler.ru/home?id=1471085">Rambler's Top100</a></p>	
+		</div>
 	</div>
 </body>
 </html>
