@@ -47,11 +47,24 @@ document.documentElement.id = "js";
 		}
 	})
 })(jQuery);
+(function(A){
+	A.fn.extend	({
+		showTabs:function(){
+			return A(this).bind('click', function(){
+				$(this).siblings().removeClass('selected').end().next('dd').andSelf().addClass('selected');
+				return false;
+			})			
+		}
+	})
+})(jQuery);
+
+
 $(function(){
 	$('#slides #sections').load('slides.htm', function() {
 		$(this).carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});;
 	});
 	$('#header .cabinet').after('<fieldset class="cabinet-form"/>').siblings().load('cabinet.form.htm').showCabinetForm();
-	//$('#header .cabinet')
 	$('#header .nearest-branch-title').after('<div/>').siblings().load('branches.htm').showBranches();
+	
+	$('.tabs dt').showTabs();
 });

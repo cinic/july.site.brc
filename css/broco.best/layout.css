@@ -253,6 +253,9 @@ body {
 			vertical-align:top;
 			cursor:pointer;
 		}
+			.flag-ru {
+				background-position:0 -11px;
+			}
 		.nearest-branch {
 			position:relative;
 			float:left;
@@ -295,6 +298,7 @@ body {
 		.nearest-branch-active div {
 			display:block;
 		}
+
 		
 	.nav {
 
@@ -524,7 +528,7 @@ body {
 
 
 	.events {
-		padding:0 10px;
+		padding:0 10px 20px;
 		width:220px;
 		background:#FBFBFB;
 	}
