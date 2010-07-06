@@ -43,6 +43,6 @@ $(function(){
 	});
 	$('#header .cabinet').after('<fieldset class="cabinet-form"/>').siblings().load('cabinet.form.htm').showHide(".cabinet", "cabinet-form-active");
 	$('#header .nearest-branch-title').after('<div/>').siblings().load('branches.htm').showHide(".nearest-branch-title","nearest-branch-active");
-	$('#header #lang-select').after('<div/>').siblings().load('langs.htm').showHide("#active-lang", "active-lang-select");
+	$('#header #lang-select').after('<div/>').siblings('div').load('langs.htm').showHide("#active-lang", "active-lang-select");
 	$('.tabs dt').showTabs();
 });

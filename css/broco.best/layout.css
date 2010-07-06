@@ -262,12 +262,43 @@ body {
 			.flag-ru {
 				background-position:0 -11px;
 			}
+			.flag-es {
+				background-position:0 -231px;
+			}
+			.flag-ar {
+				
+			}
+			.flag-cn {
+				background-position:0 -330px;
+			}
+			.flag-ua {
+				
+			}
+			.flag-de {
+				background-position:0 -22px;
+			}
+			.flag-en {
+				background-position:0 -33px;
+			}
 		#lang-select {
 			float:left;
 		}
 		#js #lang-select {
 			display:none;
 		}
+		#js .active-lang-select div {
+			display:block;
+		}
+		
+		#js .active-lang-select div a {
+			position:relative;
+			line-height:11px;
+			text-decoration:none;
+		}
+			#js .active-lang-select div .language {
+				position:absolute;
+				margin:0;
+			}
 		.nearest-branch {
 			position:relative;
 			float:left;
@@ -303,10 +334,7 @@ body {
 			-webkit-border-radius:10px;
 			z-index:2;
 		}
-			.nearest-branch div li {
-				display:inline;
-				list-style-image:none;
-			}
+			
 			.nearest-branch div h3 {
 				margin:8px 0 4px;
 			}
