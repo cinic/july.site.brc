@@ -265,14 +265,14 @@ body {
 			.flag-es {
 				background-position:0 -231px;
 			}
-			.flag-ar {
-				
+			.flag-sa {
+				background-position:0 -352px;
 			}
 			.flag-cn {
 				background-position:0 -330px;
 			}
 			.flag-ua {
-				
+				background-position:0 -341px;
 			}
 			.flag-de {
 				background-position:0 -22px;
@@ -684,7 +684,6 @@ body {
 		.about-company .video {
 			width:320px;
 			height:201px;
-			background:#737373;
 		}
 		.about-company-text,
 		.about-company-list {
@@ -781,6 +780,7 @@ body {
 }
 
 #footer {
+	clear:both;
 	overflow:hidden;
 }
 	.directory-list {
