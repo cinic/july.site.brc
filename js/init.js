@@ -38,9 +38,9 @@ document.documentElement.id = "js";
 
 
 $(function(){
-	$('#b12 div').carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});
-	$('#h .h35').showHide("#h .h35 a", "a");
-	$('#h .h32').showHide("#h .h32 a","a");
-	$('#h .h31').showHide("#h .h31 > :first-child", "a");
+	$('#s div').carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});
+	$('#h .l6').showHide("#h .l6 a", "a");
+	$('#h .l3').showHide("#h .l3 a","a");
+	$('#h .l2').showHide("#h .l2 > :first-child", "a");
 	$('#b1 .t dt').showTabs('sel');
 });
