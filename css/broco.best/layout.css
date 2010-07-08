@@ -644,60 +644,60 @@ body {
 		margin:0 auto;
 	}
 
-.b16 {
+.e {
 	float:left;
 	padding:0 10px 20px;
 	width:220px;
 	background:#FBFBFB;
 }
-#njs .b16 {
+#njs .e {
 	float:right;
 }
-.b16 h3 {
+.e h3 {
 	margin:22px 0 6px 22px;
 	color:#303030;
 	font-size:16px;
 	text-transform:uppercase;
 }
-.b16 h3 i {
+.e h3 i {
 	position:absolute;
 	margin:0 0 0 -22px;
 	width:16px;
 	height:17px;
 	background:url(sprite.png) no-repeat -17px -451px;
 }
-	h3.b16-cn i {
+	h3.en i {
 		background-position: -17px -451px;
 	}
-	h3.b16-e i {
+	h3.ee i {
 		background-position: -17px -520px;
 	}
-	h3.b16-so i {
+	h3.eo i {
 		background-position: -17px -469px;
 	}
-.b16 ul li {
+.e ul li {
 	margin:0 0 18px;
 	list-style-image:none;
 }
-.b16 ul li a {
+.e ul li a {
 	color:#000;
 	text-decoration:none;
 }
-.b16-d {
+.ed {
 	display:block;
 	color:#818181;
 }
-.b16 hr {
+.e hr {
 	display:block;
 	border:none;
 	border-top:1px solid #F1F1F1;
 	border-bottom:1px solid #C5C5C5;
 }
-.b16 p {
+.e p {
 	text-align:center;
 	text-transform:uppercase;
 }
-.b16 p a img {
+.e p a img {
 	display:block;
 	margin:0 auto;
 }
@@ -940,45 +940,49 @@ body {
 	}
 
 
-	.s #b2 #sub-nav {
+	.s #b2 .sn {
 		padding:0 0 0 40px;
 	}
-		.s #b2 #sub-nav li {
+		.s #b2 .sn li {
 			margin:0 0 22px;
 			list-style-image:none;
 			text-transform:uppercase;
 			color:#F00;
 		}
-		.s #b2 #sub-nav li li {
+		.s #b2 .sn li li {
 			margin:0 0 0 10px;
 			text-transform:none;
 		}
-		.s #b2 #sub-nav li i {
+		.s #b2 .sn li i {
 			float:left;
 			margin:0 0 0 -22px;
 			width:16px;
 			height:16px;
 			background:url(sprite.png) no-repeat -17px -486px;
 		}
-		.s #b2 #sub-nav li:hover i,
-		.s #b2 #sub-nav li:hover a,
-		.s #b2 #sub-nav li.sel i {
+		.s #b2 .sn li:hover i,
+		.s #b2 .sn li:hover a,
+		.s #b2 .sn li.sel i {
 			background-position:-17px -503px;
 			color:#F00;
 		}
-		.s #b2 #sub-nav li a {
+		.s #b2 .sn li a {
 			color:#737373;
 			text-decoration:none;
 		}
-		.s #b2 #sub-nav li a:hover {
+		.s #b2 .sn li a:hover {
 			color:#F00;
 		}
-		.s #b2 #sub-nav li li a,
-		.s #b2 #sub-nav li:hover li a {
+		.s #b2 .sn li li a,
+		.s #b2 .sn li:hover li a {
 			color:#000;
 		}
-		.s #b2 #sub-nav li:hover li a:hover {
+		.s #b2 .sn li:hover li a:hover {
 			color:#F00;
+		}
+		
+		.s #b2 .b22 {
+			
 		}
 		
 /*Footer elements style
@@ -1013,4 +1017,9 @@ body {
 .f3 {
 	color:#F9F9F9;
 	text-align:center;
+}
+.f4 {
+	line-height:12px;
+	font-size:10px;
+	color:#898989;
 }
