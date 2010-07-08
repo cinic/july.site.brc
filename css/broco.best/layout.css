@@ -650,6 +650,12 @@ body {
 	width:220px;
 	background:#FBFBFB;
 }
+.s .e {
+	background:#BCBCBC;
+	border-radius:30px;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+}
 #njs .e {
 	float:right;
 }
