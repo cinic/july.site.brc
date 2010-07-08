@@ -839,7 +839,7 @@ body {
 			width:33px;
 			height:33px;
 			background:url(sprite.png) no-repeat 0 -286px;
-			z-i:3;
+			z-index:3;
 		}
 		.s #b1 .teaser li.real {
 			border-top-left-radius:10px;
@@ -874,7 +874,7 @@ body {
 			border-bottom:1px solid #FFF;
 			color:#000;
 			text-decoration:none;
-			z-i:5;
+			z-index:5;
 		}
 		.s #b1 .teaser li:hover,
 		.s #b1 .teaser li:hover a {
