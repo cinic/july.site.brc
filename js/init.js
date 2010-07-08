@@ -38,9 +38,7 @@ document.documentElement.id = "js";
 
 
 $(function(){
-	$('#b12 div').load('slides.htm', function() {
-		$(this).carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});;
-	});
+	$('#b12 div').carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});
 	$('#h .h35').showHide("#h .h35 a", "a");
 	$('#h .h32').showHide("#h .h32 a","a");
 	$('#h .h31').showHide("#h .h31 > :first-child", "a");
