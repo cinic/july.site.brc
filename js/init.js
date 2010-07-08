@@ -27,9 +27,9 @@ document.documentElement.id = "js";
 
 (function(A){
 	A.fn.extend	({
-		showTabs:function(){
+		showTabs:function(elementClass){
 			return A(this).bind('click', function(){
-				$(this).siblings().removeClass('selected').end().next('dd').andSelf().addClass('selected');
+				$(this).siblings().removeClass(elementClass).end().next('dd').andSelf().addClass(elementClass);
 				return false;
 			})			
 		}
@@ -38,11 +38,11 @@ document.documentElement.id = "js";
 
 
 $(function(){
-	$('#slides #sections').load('slides.htm', function() {
+	$('#b12 div').load('slides.htm', function() {
 		$(this).carousel({loop:true,autoSlide:true,autoSlideInterval:6000,delayAutoSlide:6000,dispItems:1,effect:"fade",pagination:true});;
 	});
-	$('#header .cabinet').after('<fieldset class="cabinet-form"/>').siblings().load('cabinet.form.htm').showHide(".cabinet", "cabinet-form-active");
-	$('#header .nearest-branch-title').after('<div/>').siblings().load('branches.htm').showHide(".nearest-branch-title","nearest-branch-active");
-	$('#header #lang-select').after('<div/>').siblings('div').load('langs.htm').showHide("#active-lang", "active-lang-select");
-	$('.tabs dt').showTabs();
+	$('#h .h35').showHide("#h .h35 a", "a");
+	$('#h .h32').showHide("#h .h32 a","a");
+	$('#h .h31').showHide("#h .h31 > :first-child", "a");
+	$('#b1 .t dt').showTabs('sel');
 });
